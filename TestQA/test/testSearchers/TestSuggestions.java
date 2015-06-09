@@ -1,4 +1,4 @@
-package testGoogle;
+package testSearchers;
 
 
 
@@ -6,20 +6,19 @@ import java.util.concurrent.TimeUnit;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
-
 import static org.junit.Assert.*;
+
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.searcher.ResultsPage;
-import com.searcher.SearchPage;
+import pages.ResultsPage;
+import pages.SearchPage;
 
 @RunWith(JUnitParamsRunner.class)
 public class TestSuggestions {
