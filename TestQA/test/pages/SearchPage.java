@@ -16,7 +16,7 @@ public class SearchPage extends Page {
 
 	public ResultsPage search(String searchQuery) {
 		searchBox.sendKeys(searchQuery);
-		return PageFactory.initElements(_driver, ResultsPage.class);
+		return PageFactory.initElements(driver, ResultsPage.class);
 	}
 
 }

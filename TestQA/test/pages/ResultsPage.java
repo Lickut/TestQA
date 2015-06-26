@@ -15,7 +15,7 @@ public class ResultsPage extends Page{
  
     public List<String> getSuggestions(){
     	List<String> suggestionList= new ArrayList<String>();
-    	List<WebElement> allSuggestions = _driver.findElements(By
+    	List<WebElement> allSuggestions = driver.findElements(By
 				.xpath("//div[@class='sbqs_c']"));
 		for (WebElement suggestion : allSuggestions) {
 			suggestionList.add(suggestion.getText());
